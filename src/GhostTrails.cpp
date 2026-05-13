@@ -1920,11 +1920,11 @@ TCHAR* GhostTrails::GetObjectName()
 
 // ----------------------------------------------------------------------------
 
-ChannelMask GhostTrails::ChannelsUsed() { return PART_GEOM | PART_TOPO; }
+ChannelMask GhostTrails::ChannelsUsed() { return (ChannelMask)PART_GEOM | (ChannelMask)PART_TOPO; }
 
 // ----------------------------------------------------------------------------
 
-ChannelMask GhostTrails::ChannelsChanged() { return PART_ALL; }
+ChannelMask GhostTrails::ChannelsChanged() { return (ChannelMask)PART_ALL; }
 
 // ----------------------------------------------------------------------------
 
